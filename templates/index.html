@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load static %}
+  <!-- PAGE settings -->
+
+  <title>Pet Shop</title>
+
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/wireframe.css'%}">
+
+</head>
+
+<body>
+
+  <div class="text-center py-5">
+    <div class="container">
+      <div class="row my-5 justify-content-center">
+        <div class="col-md-9">
+          <h1 contenteditable="true">Online Shopping System For Pets<br></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 p-3">
+          <div class="card box-shadow">
+            <a href="{% static 'dog.jpg' %}" target="_blank">
+            <img class="card-img-top" src="{% static 'dog.jpg' %}" width="720" height="500"></a>
+            <div class="card-body">
+              <p class="card-text">Chihuaha Dog<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openNav()">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="card box-shadow">
+            <a href="{% static 'rana-sawalha-X7UR0BDz-UY-unsplash.jpg' %}" target="_blank">
+            <img class="card-img-top" src="{% static 'rana-sawalha-X7UR0BDz-UY-unsplash.jpg' %}" width="720" height="500"></a>
+            <div class="card-body">
+              <p class="card-text">Munchkin Cat</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openNav()">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="card box-shadow">
+            <a href="{% static 'olia-nayda-f6v_Q0WXEK8-unsplash.jpg' %}" target="_blank">
+            <img class="card-img-top" src="{% static 'olia-nayda-f6v_Q0WXEK8-unsplash.jpg'%}" width="720" height="500"></a>
+            <div class="card-body">
+              <p class="card-text">Pointer Dog<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openNav()">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="card box-shadow">
+            <a href="{% static 'dorothea-oldani-SjmbIkCfE9Q-unsplash.jpg' %}" target="_blank">
+              <img class="card-img-top" src="{% static 'dorothea-oldani-SjmbIkCfE9Q-unsplash.jpg'%}" width="720" height="500"></a>
+            <div class="card-body">
+              <p class="card-text">Devon Rex Cat</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openNav()">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="card box-shadow">
+            <a href="{% static 'jamie-street-5ZvggPm7tB0-unsplash.jpg' %}" target="_blank">
+              <img class="card-img-top" src="{% static 'jamie-street-5ZvggPm7tB0-unsplash.jpg'%}" width="720" height="500"></a>
+            <div class="card-body">
+              <p class="card-text">Golden Retriever Dog</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openNav()">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="card box-shadow">
+             <a href="{% static 'putra-mahirudin-Nf1Zcpdxusk-unsplash.jpg' %}" target="_blank">
+               <img class="card-img-top" src="{% static 'putra-mahirudin-Nf1Zcpdxusk-unsplash.jpg'%}" width="720" height="500"></a>
+            <div class="card-body">
+              <p class="card-text">Egyptian Mau Cat<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openNav()">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="card box-shadow">
+            <a href="{% static 'nathan-mullet-9JzTxsYM078-unsplash.jpg' %}" target="_blank">
+              <img class="card-img-top" src="{% static 'nathan-mullet-9JzTxsYM078-unsplash.jpg'%}" width="720" height="500"></a>
+            <div class="card-body">
+              <p class="card-text">Sarabi Dog</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openNav()">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="card box-shadow">
+            <a href="{% static 'mathilde-langevin-wH3kX_1ri8Y-unsplash.jpg' %}" target="_blank">
+              <img class="card-img-top" src="{% static 'mathilde-langevin-wH3kX_1ri8Y-unsplash.jpg'%}" width="720" height="500"></a>
+            <div class="card-body">
+              <p class="card-text">Border Collie Dog</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="card box-shadow">
+             <a href="{% static 'chris-cooper-jmJfcq_rBmI-unsplash.jpg' %}" target="_blank">
+               <img class="card-img-top" src="{% static 'chris-cooper-jmJfcq_rBmI-unsplash.jpg'%}" width="720" height="500"></a>
+            <div class="card-body">
+              <p class="card-text">Rottweiller Dog<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="openNav()">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">Back to top</a>
+      </p>
+    </div>
+  </footer>
+
+  <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+
+  <div class="overlay-content">
+    <div class="container">
+    <form method="POST" action="{%url 'save'%}">
+      <fieldset>
+        <legend>Form</legend>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </fieldset>
+    </form>
+</div>
+
+
+
+  </div>
+
+</div><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" style=""></script><script src="https://unpkg.com/js-image-zoom@0.4.1/js-image-zoom.js" type="application/javascript"></script><script>
+/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<style>/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}</style>
+</body>
+</html>
